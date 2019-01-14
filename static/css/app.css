@@ -1,0 +1,73 @@
+/*****************************************
+  upload button styles
+******************************************/
+.fileup{
+	position: relative;
+}
+
+.file-upload__label {
+  display:inline-block;
+  padding: 1em 2em;
+  color: #fff;
+ background: #222;
+ border-radius: .4em;
+  transition: background .3s;
+margin-left: 250px;
+
+
+}
+.file-upload__label:hover {
+	 cursor: pointer;
+	 /* background: #000; */
+ background-color: #51a351;
+}
+
+.file-upload__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1;
+    width:0;
+    height: 100%;
+    opacity: 0;
+}
+
+/*****************************************
+ design styles
+******************************************/
+html {
+   font-family: 'helvetica neue', 'arial', sans-serif;
+   font-size: 24px;
+   font-weight: bold;
+   padding-top: 1em;
+   -webkit-font-smoothing: antialiased;
+   text-align: center;
+
+}
+
+.submit__input{
+	display: inline-block;
+  padding: 1em 2em;
+  color: #fff;
+ background: #222;
+ border-radius: .4em;
+margin-left: 100px;
+}
+.submit__input:hover {
+	 cursor: pointer;
+	 /* background: #000; */
+ background-color: #51a351;
+}
+
+body {
+  background-image: url("pexels-photo-628241.jpeg");
+   background-attachment: fixed;
+background-size:cover;
+}
+
+#img1{
+	margin-left: 100px;
+	border: 10px solid black ;
+}

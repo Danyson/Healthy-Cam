@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/app.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<h1 align="center">HEALTHY CAM</h1>
+<title>HEALTHY CAM</title>
+<script src="{{ url_for('static', filename='js/app.js') }}"> </script>
+</head>
+<body>
+
+<div class="container">
+<img  id="img1" src="{{ url_for('static', filename='unnamed.jpg') }}" alt="Food" width="80%" >
+</div>
+<div class="container fileup">
+
+
+ <form action="" method=post enctype=multipart/form-data>
+    <label for="upload" class="file-upload__label">Pick Your Image</label>
+    <input id="upload" class="file-upload__input" type="file" name="file" onchange="preview_image(event)">
+
+    <input  type=submit  class="submit__input" value=Upload >
+</form>
+</div>
+</body>
+</html>

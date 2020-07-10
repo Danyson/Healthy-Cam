@@ -33,7 +33,7 @@ def uploaded_file(filename):
    #address=send_from_directory(app.config['UPLOAD_FOLDER'],filename)
     var=os.path.abspath("uploads")
     var2=os.path.join(var, filename)
-    app2 = ClarifaiApp(api_key='d85566d0480a4a42b7937ee35e07efb0')
+    app2 = ClarifaiApp(api_key='<your-key>')
     model = app2.models.get('food-items-v1.0')
     image = ClImage(file_obj=open(var2, 'rb'))
     response=model.predict([image])
@@ -52,12 +52,12 @@ def uploaded_file(filename):
     payload = pay1+pay2+pay3
         #print("org:"+payload)
     headers = {
-    'x-app-id': "19b60cbc",
-    'x-app-key': "f6526d97cd89cecca0c596c0ccda0c2c",
+    'x-app-id': "<your-id>",
+    'x-app-key': "<your-key>",
     'x-remote-user-id': "0",
     'Content-Type': "application/json",
     'cache-control': "no-cache",
-    'Postman-Token': "595b6a9f-743c-4196-af70-e8eb2c30f4cb"
+    'Postman-Token': "<your-token>"
        }
 
     response = requests.request("POST", url, data=payload, headers=headers)
